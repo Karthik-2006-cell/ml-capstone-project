@@ -24,8 +24,8 @@ This project implements robust, leak-free, modular machine learning pipelines ac
 
 1. **Target Analysis:** Evaluated the distribution of `price`. The feature displays right-skewness, validated via Seaborn KDE plots.
 2. **Feature Engineering:**
-* `house_age`: Derived via $\text{yr\_sold} - \text{yr\_built}$ to capture structural depreciation.
-* `is_renovated`: Binary flag ($1$ if $\text{yr\_renovated} > 0$, else $0$) mitigating sparse zero-inflated year entries.
+* `house_age`: Derived via yr_sold - yr_built to capture structural depreciation.
+* `is_renovated`: Binary flag  (1 if yr_renovated > 0, else 0) mitigating sparse zero-inflated year entries.
 * Removed non-predictive identifiers (`id`, `date`, `yr_built`, `yr_renovated`) to eliminate redundant multi-collinearity.
 
 
@@ -91,19 +91,18 @@ Evaluated on the exact same 20% stratified test set using weighted class metrics
 ## 4. Setup & Run Instructions
 
 1. **Clone the repository:**
-   
-git clone https://github.com/Karthik-2006-cell/ml-capstone-project.git
-cd ml-capstone-project
+   * git clone https://github.com/Karthik-2006-cell/ml-capstone-project.git
+   *  cd ml-capstone-project
 
 
 
 2. **Install dependencies:**
-pip install -r requirements.txt
+   * pip install -r requirements.txt
 
 
 
-3. **Launch notebooks:**
-jupyter notebook
+4. **Launch notebooks:**
+   * jupyter notebook
 
 
 Open and run all cells sequentially in `notebooks/regression.ipynb` and `notebooks/classification.ipynb`.
